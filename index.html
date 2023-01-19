@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&&family=Manrope:wght@200;300;400;500display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Talking duck</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <h1 class="p-3 mt-4">Nelly the talking duck</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos natus
+        corrupti quaerat fugiat nam atque in ratione numquam deleniti tempore
+        accusamus incidunt earum, reiciendis nobis facere deserunt inventore ea
+        aut.
+      </p>
+
+      <!-- Text imput -->
+      <main class="pt-2 pb-5">
+        <div class="row">
+          <div class="col-sm-9 ms-5">
+            <textarea
+              class="p-3 mb-2"
+              placeholder="Please write something here..."
+            ></textarea>
+          </div>
+        </div>
+        <!-- pitch controls -->
+        <!-- play button -->
+        <div class="controls ms-5 mt-3">
+          <div class="row">
+            <div class="col-sm-3">
+              <button class="btn btn-outline-light shadow p-3 mb-5 rounded">
+                <img src="images/play-icon.svg" width="50px" />
+              </button>
+            </div>
+            <!-- pitch -->
+            <div class="col-sm-6">
+              <div class="pitch-controls d-block">
+                <label>control the pitch</label>
+                <input
+                  id="pitch-range"
+                  type="range"
+                  min="0.1"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ducks -->
+        <figure class="duck">
+          <img
+            class="static-duck img-fluid"
+            src="images/talking-duck-static.png"
+            alt="static-duck"
+          />
+          <img
+            class="animated-duck img-fluid talking"
+            src="images/talking-duck-animated.gif"
+            alt="animated-duck"
+          />
+        </figure>
+      </main>
+    </div>
+    <div class="bottom-page">
+      <footer class="footer">
+        <a
+          href="https://www.linkedin.com/in/olivia-popoola-095op"
+          target="_blank"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/058/original/9026840_linkedin_logo_thin_icon.png?1670861656"
+            alt="linkedin"
+            width="40" /></a
+        ><a href="https://github.com/OliviaPopoola" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/057/original/9026804_github_logo_thin_icon.png?1670861626"
+            alt="github"
+            width="40" /></a
+        ><a href="https://www.instagram.com/livvy.codes/" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/056/original/9026811_instagram_logo_thin_icon.png?1670861619"
+            alt="instagram"
+            width="40"
+        /></a>
+
+        <div class="tagline">made with 💗 by Olivia</div>
+      </footer>
+    </div>
+  </body>
+</html>
